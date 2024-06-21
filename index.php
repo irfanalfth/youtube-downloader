@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Download Video Youtube</title>
+
+    <link rel="shortcut icon" href="assets/media/favicons/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" id="css-main" href="assets/css/oneui.min.css">
+    <style>
+        #detailVideo {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page-container" class="main-content-boxed">
+        <main id="main-container" class="d-flex align-items-center m-3">
+            <div class="block block-rounded w-100">
+                <div class="block-header block-header-default">
+                    <h3 class="block-title">
+                        Download Video Youtube
+                    </h3>
+                </div>
+                <div class="block block-rounded">
+                    <div class="block-content">
+                        <div class="row space-y-4">
+                            <div class="col-lg-12">
+                                <form class="space-y-2" id="byNumber">
+                                    <input type="text" id="youtubeLink" class="form-control" placeholder="Paste Link Youtube">
+                                    <button type="submit" id="prosesButton" class="btn w-100 btn-dark px-5">Proses</button>
+                                </form>
+                            </div>
+                            <div class="row items-push" id="detailVideo">
+                                <hr>
+                                <div class="col-md-4 col-lg-5 d-flex align-items-center">
+                                    <div class="img-link img-link-simple">
+                                        <img class="img-fluid rounded" id="imgVideo" src="">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-7 d-md-flex align-items-center">
+                                    <div>
+                                        <h5 class="mb-1" id="titleVideo">
+                                            Judul Video
+                                        </h5>
+                                        <div class="fs-sm fw-medium mb-3">
+                                            Kualitas Video <span id="qualityVideo" class="text-primary">360p</span> · Ukuran Video <span id="sizeVideo" class="text-primary">118.48 MB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-primary w-100 mb-2" id="downloadVideo" href="">Download Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="assets/js/oneui.app.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
